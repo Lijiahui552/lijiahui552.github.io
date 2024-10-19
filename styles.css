@@ -14,25 +14,26 @@ header {
     text-align: center;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     background: #444;
+    margin: 0;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 1rem;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     background: #555;
 }
 
@@ -42,7 +43,57 @@ section {
     max-width: 800px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
 }
 
 footer {
